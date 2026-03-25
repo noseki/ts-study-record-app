@@ -125,7 +125,11 @@ export function StudyRecord() {
                         aria-label="記録編集"
                         variant={"ghost"}
                         size="sm"
-                        onClick={() => onOpenEditModal(record.id)}
+                        onClick={() => {
+                          if (record.id) {
+                            onOpenEditModal(record.id);
+                          }
+                        }}
                       >
                         <FaRegEdit />
                       </IconButton>

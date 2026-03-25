@@ -14,7 +14,6 @@ import { Field } from '@/components/ui/field';
 import { PrimaryButton } from '@/components/atoms/button/PrimaryButton';
 import { type FieldErrors, type UseFormRegister } from "react-hook-form";
 
-
 interface FormInputs {
     title: string;
     time: number;
