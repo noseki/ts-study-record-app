@@ -9,9 +9,9 @@ jobs:
   build:
     name: Build Phase
     runs-on: ubuntu-latest
-    # env:
-    #   VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
-    #   VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+    env:
+      VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+      VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
